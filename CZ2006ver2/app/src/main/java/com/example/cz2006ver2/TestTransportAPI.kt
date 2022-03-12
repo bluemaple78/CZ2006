@@ -1,6 +1,7 @@
 package com.example.cz2006ver2
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
@@ -11,6 +12,7 @@ import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.JsonArrayRequest
 import com.android.volley.toolbox.JsonObjectRequest
+import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import org.json.JSONArray
 import org.json.JSONObject
@@ -74,25 +76,46 @@ class TestTransportAPI : AppCompatActivity() {
 
         })
 
-//        btn1.setOnClickListener{
-//            // Instantiate the RequestQueue.
-////                    val queue = Volley.newRequestQueue(this)
-//////                    val url = "https://api.data.gov.sg/v1/transport/carpark-availability"
-////                    val url = "https://www.metaweather.com/api/api/location/search/?query=london"
-////// Request a string response from the provided URL.
-////                    val stringRequest = StringRequest(Request.Method.GET, url,
-////                        Response.Listener<String> { response ->
-////                            // Display the first 500 characters of the response string.
-////                            Toast.makeText(this, response, Toast.LENGTH_SHORT).show();
-////                        },
-////                        Response.ErrorListener {  Toast.makeText(this, "That didn't work, ERROR!", Toast.LENGTH_SHORT).show(); })
-////
-////// Add the request to the RequestQueue.
-////                    queue.add(stringRequest)
-//        }
 
         btn2.setOnClickListener{
-            Toast.makeText(this, "You clicked on 2.", Toast.LENGTH_SHORT).show()
+//            Toast.makeText(this, "You clicked on 2.", Toast.LENGTH_SHORT).show()
+            // Do some work here
+            // Instantiate the RequestQueue.
+            val queue = Volley.newRequestQueue(this)
+            val url = "http://datamall2.mytransport.sg/ltaodataservice/BusArrivalv2?BusStopCode=10101"
+//                    val url = "https://www.metaweather.com/api/api/location/search/?query=london"
+// Request a string response from the provided URL.
+            val stringRequest = StringRequest(Request.Method.GET, url, Response.Listener<String>
+            { response ->
+
+//                val cityInfo: JSONObject = response.getJSONObject(0);
+//                val cityID: String = cityInfo.getString("carpark_info");
+
+                //displays the first the carpark json objects
+//                val test2: JSONObject = response.getJSONArray("items").getJSONObject(0).getJSONArray("carpark_data").getJSONObject(0)
+//                val carplate: String = test.getString("carpark_number")
+//                val test1: JSONObject = test.getJSONObject()
+//                val arr: JSONArray = obj.getJSONArray("posts")
+//                val obj = JSONObject(" .... ")
+                Log.d("TESTINGBUS", response)
+//                Toast.makeText(this, "CityID = " + carplate.toString(), Toast.LENGTH_SHORT).show();
+
+            },Response.ErrorListener { error ->
+                // TODO: Handle error
+                Toast.makeText(this, "WRONG LA", Toast.LENGTH_SHORT).show();
+
+            })
+//                    val stringRequest = StringRequest(Request.Method.GET, url,
+//                        Response.Listener<String> { response ->
+//                            // Display the first 500 characters of the response string.
+//                            Toast.makeText(this, response, Toast.LENGTH_SHORT).show();
+//                        },
+//                        Response.ErrorListener {  Toast.makeText(this, "That didn't work, ERROR!", Toast.LENGTH_SHORT).show(); })
+
+// Add the request to the RequestQueue.
+            queue.add(stringRequest)
+//                    Toast.makeText(this, "You clicked on 1.", Toast.LENGTH_SHORT).show();
+
         }
         btn3.setOnClickListener{
             Toast.makeText(this, "You clicked on 3.", Toast.LENGTH_SHORT).show()

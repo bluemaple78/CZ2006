@@ -20,5 +20,11 @@ class MainActivity : AppCompatActivity() {
             val regIntent = Intent(this, RegisterActivity::class.java)
             startActivity(regIntent)
         }
+
+        //delete this portion after the API thing
+        button4.setOnClickListener{
+            val testIntent = Intent(this, TestTransportAPI::class.java)
+            startActivity(testIntent)
+        }
     }
 }
