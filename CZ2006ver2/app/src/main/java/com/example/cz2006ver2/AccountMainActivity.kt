@@ -21,7 +21,7 @@ class AccountMainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         transporticon_page3.setOnClickListener{
-            val intent = Intent(this, CalendarDayActivity::class.java)
+            val intent = Intent(this, trans1::class.java)
             startActivity(intent)
         }
         accounticon_page3.setOnClickListener{

@@ -44,7 +44,7 @@ class HomePage1 : AppCompatActivity() {
         }
 
         transporticon_page1.setOnClickListener{
-            val intent = Intent(this, LoginActivity::class.java)
+            val intent = Intent(this, trans1::class.java)
             startActivity(intent)
         }
 
