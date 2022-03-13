@@ -32,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:src="@drawable/back_button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/home4hotomelogo"
@@ -42,7 +42,7 @@
         android:id="@+id/home4_back_button_word"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="21dp"
+        android:layout_marginTop="16dp"
         android:text="Back"
         android:textColor="@color/dBrown"
         android:textSize="16dp"
@@ -53,15 +53,15 @@
         android:id="@+id/home4_delete_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/home4hotomelogo"
+        app:layout_constraintTop_toBottomOf="@id/home4_back_button"
         app:layout_constraintStart_toStartOf="parent"
         android:text="Delete Task"
         android:textColor="@color/dBrown"
         android:textSize="25dp"
         android:fontFamily="sans-serif-black"
         android:letterSpacing="0.05"
-        android:layout_marginTop="50dp"
-        android:paddingLeft="30dp">
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp">
 
     </TextView>
 
@@ -71,29 +71,30 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/home4_delete_header"
         app:layout_constraintStart_toStartOf="parent"
-        android:fontFamily="@font/lato"
         android:text="Which task do you want to delete?"
         android:lineSpacingExtra="3dp"
         android:textColor="@color/dBrown"
         android:textSize="16dp"
+        android:textStyle="bold"
         android:letterSpacing="0.05"
-        android:paddingLeft="35dp"
+        android:gravity="center_horizontal"
         android:layout_marginTop="20dp">
     </TextView>
 
     <ScrollView
         android:id="@+id/home4scroll"
-        android:layout_width="356dp"
-        android:layout_height="304dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
         android:background="@drawable/homemiddlebox"
-        android:paddingLeft="10dp"
-        android:paddingTop="20dp"
-        android:paddingRight="10dp"
-        android:paddingBottom="22dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp"
         android:scrollbars="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/home4_desc_text">
 
@@ -105,10 +106,12 @@
                 android:id="@+id/home4check1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:paddingLeft="10dp"
                 android:text="Bring Ah Ma to the Polyclinic"
-                android:textSize="20sp"
+                android:layout_marginTop="3dp"
+                android:textSize="16sp"
+                android:textColor="@color/dBrown"
+                android:lineSpacingExtra="5dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
@@ -118,10 +121,12 @@
                 android:id="@+id/home4check2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="3dp"
+                android:textSize="16sp"
                 android:paddingLeft="10dp"
-                android:text="Give Ah Ma Medication(Afternoon)"
-                android:textSize="20sp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@color/dBrown"
+                android:text="Give Ah Ma Medication (Afternoon)"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/home4check1">
 
@@ -131,11 +136,12 @@
                 android:id="@+id/home4check3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="3dp"
+                android:textSize="16sp"
                 android:paddingLeft="10dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@color/dBrown"
                 android:text="Bring Ah Ma to the Polyclinic"
-                android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/home4check2">
 
@@ -145,11 +151,12 @@
                 android:id="@+id/home4check4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="3dp"
+                android:textSize="16sp"
                 android:paddingLeft="10dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@color/dBrown"
                 android:text="Bring Ah Ma to the Polyclinic"
-                android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/home4check3">
 
@@ -159,16 +166,43 @@
                 android:id="@+id/home4check5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="3dp"
+                android:textSize="16sp"
                 android:paddingLeft="10dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@color/dBrown"
                 android:text="Bring Ah Ma to the Polyclinic"
-                android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/home4check4">
-
             </CheckBox>
 
+            <CheckBox
+                android:id="@+id/home4check6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textSize="16sp"
+                android:paddingLeft="10dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@color/dBrown"
+                android:text="Bring Ah Ma to the Polyclinic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/home4check5">
+            </CheckBox>
+
+            <CheckBox
+                android:id="@+id/home4check7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textSize="16sp"
+                android:paddingLeft="10dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@color/dBrown"
+                android:text="Bring Ah Ma to the Polyclinic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/home4check6">
+            </CheckBox>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
@@ -184,7 +218,7 @@
         android:textSize="16dp"
         android:fontFamily="sans-serif-black"
         app:cornerRadius="50dp"
-        android:layout_marginVertical="20dp"
+        android:layout_marginVertical="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/home4scroll" />

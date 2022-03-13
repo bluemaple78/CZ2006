@@ -39,7 +39,7 @@
         android:fontFamily="sans-serif-black"
         android:letterSpacing="0.05"
         android:layout_marginTop="50dp"
-        android:paddingLeft="30dp">
+        android:layout_marginLeft="40dp">
 
     </TextView>
 
@@ -84,6 +84,7 @@
             android:lineSpacingExtra="3dp"
             android:textColor="@color/dBrown"
             android:textSize="16dp"
+            android:textStyle="bold"
             android:letterSpacing="0.05"
             android:paddingLeft="35dp"
             android:layout_marginTop="20dp">
@@ -97,10 +98,11 @@
             app:layout_constraintTop_toBottomOf="@id/home3_desc_text"
             app:layout_constraintStart_toStartOf="parent"
             android:fontFamily="@font/lato"
-            android:text="Give Ah Ma medication (Night)"
+
             android:lineSpacingExtra="3dp"
-            android:textColor="@color/peach"
+            android:textColor="@color/button"
             android:textSize="16dp"
+            android:textStyle="bold"
             android:letterSpacing="0.05"
             android:paddingLeft="35dp"
             android:layout_marginTop="20dp">
@@ -118,6 +120,7 @@
             android:lineSpacingExtra="3dp"
             android:textColor="@color/dBrown"
             android:textSize="16dp"
+            android:textStyle="bold"
             android:letterSpacing="0.05"
             android:paddingLeft="35dp"
             android:layout_marginTop="20dp">
@@ -131,10 +134,11 @@
             app:layout_constraintTop_toBottomOf="@id/home3_time_text"
             app:layout_constraintStart_toStartOf="parent"
             android:fontFamily="@font/lato"
-            android:text="10:00 pm"
+
             android:lineSpacingExtra="3dp"
-            android:textColor="@color/peach"
+            android:textColor="@color/button"
             android:textSize="16dp"
+            android:textStyle="bold"
             android:letterSpacing="0.05"
             android:paddingLeft="35dp"
             android:layout_marginTop="20dp">
@@ -152,6 +156,7 @@
             android:lineSpacingExtra="3dp"
             android:textColor="@color/dBrown"
             android:textSize="16dp"
+            android:textStyle="bold"
             android:letterSpacing="0.05"
             android:paddingLeft="35dp"
             android:layout_marginTop="20dp">
@@ -165,10 +170,11 @@
             app:layout_constraintTop_toBottomOf="@id/home3_date_text"
             app:layout_constraintStart_toStartOf="parent"
             android:fontFamily="@font/lato"
-            android:text="1 Mar 2022"
+
             android:lineSpacingExtra="3dp"
-            android:textColor="@color/peach"
+            android:textColor="@color/button"
             android:textSize="16dp"
+            android:textStyle="bold"
             android:letterSpacing="0.05"
             android:paddingLeft="35dp"
             android:layout_marginTop="20dp">
@@ -186,6 +192,7 @@
             android:lineSpacingExtra="3dp"
             android:textColor="@color/dBrown"
             android:textSize="16dp"
+            android:textStyle="bold"
             android:letterSpacing="0.05"
             android:paddingLeft="35dp"
             android:layout_marginTop="20dp">
@@ -199,10 +206,11 @@
             app:layout_constraintTop_toBottomOf="@id/home3_recurring_text"
             app:layout_constraintStart_toStartOf="parent"
             android:fontFamily="@font/lato"
-            android:text="Yes, everyday"
+
             android:lineSpacingExtra="3dp"
-            android:textColor="@color/peach"
+            android:textColor="@color/button"
             android:textSize="16dp"
+            android:textStyle="bold"
             android:letterSpacing="0.05"
             android:paddingLeft="35dp"
             android:layout_marginTop="20dp">

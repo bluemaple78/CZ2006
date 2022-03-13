@@ -23,5 +23,10 @@ class CalendarDayActivity : AppCompatActivity() {
             val calEditCaretakerBtn = Intent(this, CalendarCaretakerActivity::class.java)
             startActivity(calEditCaretakerBtn)
         }
+        // edit task btn
+        edit_tasks_btn.setOnClickListener{
+            val calEditTaskBtn = Intent(this, CalendarTaskActivity::class.java)
+            startActivity(calEditTaskBtn)
+        }
     }
 }

@@ -88,6 +88,24 @@
         tools:ignore="MissingConstraints" />
 
     <Button
+        android:id="@+id/create_grp_btn"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/backgroundpre"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:text="Create Group"
+        android:textSize="16sp"
+        android:textColor="@color/dBrown"
+        android:fontFamily="sans-serif-black"
+        app:cornerRadius="20dp"
+        android:layout_marginVertical="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grp_details_btn"
+        tools:ignore="MissingConstraints" />
+
+    <Button
         android:id="@+id/logout_btn"
         android:layout_width="260dp"
         android:layout_height="wrap_content"
@@ -102,7 +120,7 @@
         android:layout_marginVertical="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/grp_details_btn"
+        app:layout_constraintTop_toBottomOf="@+id/create_grp_btn"
         tools:ignore="MissingConstraints" />
 
     <!--                start of navbar code                 -->

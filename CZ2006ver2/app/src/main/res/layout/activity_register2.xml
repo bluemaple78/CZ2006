@@ -62,6 +62,7 @@
                 android:paddingTop="13dp"
                 android:paddingBottom="13dp"
                 android:text="Sign Up"
+                android:textColor="@color/white"
                 android:fontFamily="sans-serif-black"
                 app:cornerRadius="50dp"
                 app:layout_constraintEnd_toEndOf="parent"

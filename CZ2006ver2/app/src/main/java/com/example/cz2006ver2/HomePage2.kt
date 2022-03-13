@@ -1,6 +1,7 @@
 package com.example.cz2006ver2
 
 import android.app.DatePickerDialog
+import android.app.PendingIntent.getActivity
 import android.app.TimePickerDialog
 import android.content.Intent
 import android.os.Bundle
@@ -8,6 +9,7 @@ import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_home_page2.*
+import org.w3c.dom.Text
 import java.util.*
 
 
@@ -16,8 +18,16 @@ class HomePage2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_page2)
 
-        home2_login_button.setOnClickListener {
+        home2_create_button.setOnClickListener {
             val intent = Intent(this, HomePage3::class.java)
+            val descview = findViewById<EditText>(R.id.home2_desc_edit)
+            val timeview = findViewById<TextView>(R.id.home2_time_text)
+            val dateview = findViewById<TextView>(R.id.home2_date_text)
+            val spincon = findViewById<Spinner>(R.id.home2_event_spinner)
+            intent.putExtra("desc", descview.text.toString())
+            intent.putExtra("time", timeview.text)
+            intent.putExtra("date", dateview.text)
+            intent.putExtra("spin", spincon.selectedItem.toString())
             startActivity(intent)
         }
 
@@ -28,9 +38,10 @@ class HomePage2 : AppCompatActivity() {
 
         spinclick()
         timeclick()
+        dateclick()
     }
 
-    fun spinclick()
+    private fun spinclick()
     {
         val languages = resources.getStringArray(R.array.yes_no)
 
@@ -48,13 +59,7 @@ class HomePage2 : AppCompatActivity() {
                 override fun onItemSelected(
                     parent: AdapterView<*>,
                     view: View, position: Int, id: Long
-                ) {
-                    Toast.makeText(
-                        this@HomePage2,
-                        getString(R.string.select) + " " +
-                                "" + languages[position], Toast.LENGTH_SHORT
-                    ).show()
-                }
+                ) {}
 
                 override fun onNothingSelected(parent: AdapterView<*>) {
                     // write code to perform some action
@@ -63,11 +68,10 @@ class HomePage2 : AppCompatActivity() {
         }
     }
 
-    fun timeclick()
+    private fun timeclick()
     {
         var picker: TimePickerDialog
-        val tvw: TextView
-        tvw = findViewById<View>(R.id.home2_time_text) as TextView
+        val tvw: TextView = findViewById<View>(R.id.home2_time_text) as TextView
         tvw.setOnClickListener(View.OnClickListener {
             val cldr: Calendar = Calendar.getInstance()
             val hour: Int = cldr.get(Calendar.HOUR_OF_DAY)
@@ -80,17 +84,23 @@ class HomePage2 : AppCompatActivity() {
             tvw.text = "Selected Time: " + tvw.text
         })
     }
-/*
-    fun dateclick()
+
+    private fun dateclick()
     {
-        var picker : DatePickerDialog
-        val tvw: TextView
-        tvw = findViewById(R.id.home2_date_text) as TextView
+        val tvw = findViewById<TextView>(R.id.home2_date_text)
         tvw.setOnClickListener(View.OnClickListener {
-            val cldr: Calendar = Calendar.getInstance()
-            val day:
-        })
+            val calendar = Calendar.getInstance()
+            val yy = calendar[Calendar.YEAR]
+            val mm = calendar[Calendar.MONTH]
+            val dd = calendar[Calendar.DAY_OF_MONTH]
+            val datePicker = DatePickerDialog(this@HomePage2,
+                { _, year, monthOfYear, dayOfMonth ->
+                    val date = "$year-$monthOfYear-$dayOfMonth"
+                    tvw.text = date
+                }, yy, mm, dd
+            )
+            datePicker.show()  })
+
     }
 
- */
 }

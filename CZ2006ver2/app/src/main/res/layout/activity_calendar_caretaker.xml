@@ -59,7 +59,7 @@
         android:textColor="@color/dBrown"
         android:textSize="25dp"
         android:layout_marginVertical="20dp"
-        android:layout_marginLeft="37dp"
+        android:layout_marginLeft="40dp"
         android:fontFamily="sans-serif-black"
         android:letterSpacing="0.05"
         app:layout_constraintTop_toBottomOf="@+id/back_btn_cal2" />
@@ -71,7 +71,7 @@
         android:text="DD MM YYYY"
         android:textColor="@color/dBrown"
         android:textSize="25dp"
-        android:layout_marginLeft="37dp"
+        android:layout_marginLeft="40dp"
         android:fontFamily="sans-serif-black"
         android:letterSpacing="0.05"
         app:layout_constraintTop_toBottomOf="@+id/schedule_for1" />
@@ -94,7 +94,7 @@
         android:text="Edit Caretaker"
         android:textColor="@color/dBrown"
         android:textSize="25dp"
-        android:layout_marginLeft="37dp"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="15dp"
         android:fontFamily="sans-serif-black"
         android:letterSpacing="0.05"
