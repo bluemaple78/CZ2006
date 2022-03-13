@@ -52,12 +52,18 @@ class trans1 : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarkerClickL
             return
         }
         mMap.isMyLocationEnabled = true
-        fusedLocationClient.lastLocation.addOnSuccessListener(this) { location ->
+
+        fusedLocationClient.lastLocation.addOnSuccessListener(this) { location: Location? ->
             if (location != null) {
                 lastLocation = location
                 val currentLatLong = LatLng(location.latitude, location.longitude)
                 placeMarkerOnMap(currentLatLong)
-                mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(currentLatLong, 12f))
+                mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(currentLatLong, 15f))
+            }
+            else {
+                val place = LatLng(1.3521, 103.8198)
+                mMap.addMarker(MarkerOptions().position(place).title("Singapore"))
+                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(place, 15f))
             }
         }
 
