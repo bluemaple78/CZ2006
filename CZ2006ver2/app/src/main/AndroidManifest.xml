@@ -3,14 +3,21 @@
     package="com.example.cz2006ver2">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <application
 
+    <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CZ2006ver2">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAH_xuBcCYf19P_pk2qsIb0T3w7YteXnIs">
+        </meta-data>
+        <activity
+            android:name=".GoogleMapsTest"
+            android:exported="false" />
         <activity
             android:name=".TestTransportAPI"
             android:exported="false" />

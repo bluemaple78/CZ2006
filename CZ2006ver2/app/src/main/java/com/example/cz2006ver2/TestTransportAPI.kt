@@ -10,9 +10,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.android.volley.Request
 import com.android.volley.Response
-import com.android.volley.toolbox.JsonArrayRequest
 import com.android.volley.toolbox.JsonObjectRequest
-import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import org.json.JSONArray
 import org.json.JSONObject
@@ -85,7 +83,9 @@ class TestTransportAPI : AppCompatActivity() {
             val url = "http://datamall2.mytransport.sg/ltaodataservice/BusArrivalv2?BusStopCode=10101"
 //                    val url = "https://www.metaweather.com/api/api/location/search/?query=london"
 // Request a string response from the provided URL.
-            val stringRequest = StringRequest(Request.Method.GET, url, Response.Listener<String>
+            val params: HashMap<String, String> = HashMap()
+            params.put("AUTHORISATION", "M8EyGPshTCOa1WvqEjEPQg==")
+            val jsonObjectRequest = object: JsonObjectRequest(Request.Method.GET, url, null,  Response.Listener<JSONObject>
             { response ->
 
 //                val cityInfo: JSONObject = response.getJSONObject(0);
@@ -93,11 +93,13 @@ class TestTransportAPI : AppCompatActivity() {
 
                 //displays the first the carpark json objects
 //                val test2: JSONObject = response.getJSONArray("items").getJSONObject(0).getJSONArray("carpark_data").getJSONObject(0)
+                  val test2: JSONArray = response.getJSONArray("value")
+
 //                val carplate: String = test.getString("carpark_number")
 //                val test1: JSONObject = test.getJSONObject()
 //                val arr: JSONArray = obj.getJSONArray("posts")
 //                val obj = JSONObject(" .... ")
-                Log.d("TESTINGBUS", response)
+                Log.d("TESTINGBUS", test2.toString())
 //                Toast.makeText(this, "CityID = " + carplate.toString(), Toast.LENGTH_SHORT).show();
 
             },Response.ErrorListener { error ->
@@ -105,6 +107,14 @@ class TestTransportAPI : AppCompatActivity() {
                 Toast.makeText(this, "WRONG LA", Toast.LENGTH_SHORT).show();
 
             })
+            {
+            override fun getHeaders(): MutableMap<String, String> {
+                val headers = HashMap<String, String>()
+                headers.put("accept", "application/json")
+                headers.put("AccountKey", "M8EyGPshTCOa1WvqEjEPQg==")
+                return headers
+            }}
+
 //                    val stringRequest = StringRequest(Request.Method.GET, url,
 //                        Response.Listener<String> { response ->
 //                            // Display the first 500 characters of the response string.
@@ -113,7 +123,7 @@ class TestTransportAPI : AppCompatActivity() {
 //                        Response.ErrorListener {  Toast.makeText(this, "That didn't work, ERROR!", Toast.LENGTH_SHORT).show(); })
 
 // Add the request to the RequestQueue.
-            queue.add(stringRequest)
+            queue.add(jsonObjectRequest)
 //                    Toast.makeText(this, "You clicked on 1.", Toast.LENGTH_SHORT).show();
 
         }

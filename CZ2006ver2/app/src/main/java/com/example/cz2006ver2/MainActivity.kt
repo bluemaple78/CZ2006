@@ -26,5 +26,10 @@ class MainActivity : AppCompatActivity() {
             val testIntent = Intent(this, TestTransportAPI::class.java)
             startActivity(testIntent)
         }
+
+        button5.setOnClickListener{
+            val testIntent = Intent(this, GoogleMapsTest::class.java)
+            startActivity(testIntent)
+        }
     }
 }
