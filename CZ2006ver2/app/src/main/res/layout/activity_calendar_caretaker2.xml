@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context=".CalendarCaretakerActivity2">
+    tools:context=".Calendar.CalendarCaretakerActivity2">
 
     <!--                start of topbar code                 -->
     <ImageView

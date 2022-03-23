@@ -1,11 +1,14 @@
-package com.example.cz2006ver2
+package com.example.cz2006ver2.HomePage
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import android.widget.TextView
+import com.example.cz2006ver2.AccountMainActivity
+import com.example.cz2006ver2.Calendar.CalendarMainActivity
+import com.example.cz2006ver2.R
+import com.example.cz2006ver2.trans1
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_home_page1.*

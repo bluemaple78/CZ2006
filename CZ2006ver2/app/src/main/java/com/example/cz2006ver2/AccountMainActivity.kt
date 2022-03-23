@@ -3,8 +3,9 @@ package com.example.cz2006ver2
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.cz2006ver2.Calendar.CalendarMainActivity
+import com.example.cz2006ver2.HomePage.HomePage1
 import kotlinx.android.synthetic.main.activity_account_main.*
-import kotlinx.android.synthetic.main.activity_calendar_main.*
 
 class AccountMainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -42,22 +42,22 @@
             android:exported="false"
             android:label="@string/title_activity_trans1" />
         <activity
-            android:name=".CalendarDayActivity"
+            android:name=".Calendar.CalendarDayActivity"
             android:exported="false" />
         <activity
-            android:name=".HomePage5"
+            android:name=".HomePage.HomePage5"
             android:exported="false" />
         <activity
-            android:name=".HomePage6"
+            android:name=".HomePage.HomePage6"
             android:exported="false" />
         <activity
-            android:name=".HomePage4"
+            android:name=".HomePage.HomePage4"
             android:exported="false" />
         <activity
-            android:name=".HomePage3"
+            android:name=".HomePage.HomePage3"
             android:exported="false" />
         <activity
-            android:name=".HomePage2"
+            android:name=".HomePage.HomePage2"
             android:exported="false" />
         <activity
             android:name=".ViewProfileActivity"
@@ -66,10 +66,10 @@
             android:name=".AccountMainActivity"
             android:exported="false" />
         <activity
-            android:name=".CalendarMainActivity"
+            android:name=".Calendar.CalendarMainActivity"
             android:exported="false" />
         <activity
-            android:name=".HomePage1"
+            android:name=".HomePage.HomePage1"
             android:exported="false" />
         <activity
             android:name=".YourCodePageActivity"

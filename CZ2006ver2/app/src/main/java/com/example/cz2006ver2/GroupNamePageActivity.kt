@@ -5,11 +5,11 @@ import android.os.Bundle
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.cz2006ver2.HomePage.HomePage1
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_group_name_page.*
-import kotlinx.android.synthetic.main.activity_test1.*
 
 class GroupNamePageActivity : AppCompatActivity() {
 

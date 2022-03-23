@@ -1,10 +1,10 @@
-package com.example.cz2006ver2
+package com.example.cz2006ver2.Calendar
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.cz2006ver2.R
 import kotlinx.android.synthetic.main.activity_calendar_caretaker.*
-import kotlinx.android.synthetic.main.activity_calendar_day.*
 
 class CalendarCaretakerActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

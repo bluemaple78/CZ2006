@@ -1,15 +1,14 @@
-package com.example.cz2006ver2
+package com.example.cz2006ver2.HomePage
 
 import android.app.DatePickerDialog
-import android.app.PendingIntent.getActivity
 import android.app.TimePickerDialog
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import com.example.cz2006ver2.R
 import kotlinx.android.synthetic.main.activity_home_page2.*
-import org.w3c.dom.Text
 import java.util.*
 
 

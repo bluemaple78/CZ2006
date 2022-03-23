@@ -1,10 +1,9 @@
-package com.example.cz2006ver2
+package com.example.cz2006ver2.Calendar
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_calendar_caretaker2.*
-import kotlinx.android.synthetic.main.activity_calendar_day.*
+import com.example.cz2006ver2.R
 import kotlinx.android.synthetic.main.activity_calendar_task.*
 
 class CalendarTaskActivity : AppCompatActivity() {
