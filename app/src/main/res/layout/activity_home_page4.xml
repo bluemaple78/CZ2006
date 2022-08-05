@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage.HomePage4"
+    android:background="@color/background">
+
+    <ImageView
+        android:id="@+id/home4hotomelogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/topbar"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HOTOME"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-black"
+        android:letterSpacing="0.5"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="@id/home4hotomelogo"
+        app:layout_constraintBottom_toBottomOf="@id/home4hotomelogo"/>
+
+    <ImageView
+        android:id="@+id/home4_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/back_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home4hotomelogo"
+        app:tint="@color/dBrown" />
+
+    <TextView
+        android:id="@+id/home4_back_button_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Back"
+        android:textColor="@color/dBrown"
+        android:textSize="16dp"
+        app:layout_constraintStart_toEndOf="@+id/home4_back_button"
+        app:layout_constraintTop_toBottomOf="@id/home4hotomelogo"/>
+
+    <TextView
+        android:id="@+id/home4_delete_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/home4_back_button"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Delete Task"
+        android:textColor="@color/dBrown"
+        android:textSize="25dp"
+        android:fontFamily="sans-serif-black"
+        android:letterSpacing="0.05"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/home4_desc_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/home4_delete_header"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Which task do you want to delete?"
+        android:lineSpacingExtra="3dp"
+        android:textColor="@color/dBrown"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:letterSpacing="0.05"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+    </TextView>
+
+    <ScrollView
+        android:id="@+id/home4scroll"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/homemiddlebox"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home4_desc_text">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/home4check1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Bring Ah Ma to the Polyclinic"
+                android:layout_marginTop="3dp"
+                android:textSize="16sp"
+                android:textColor="@color/dBrown"
+                android:lineSpacingExtra="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </CheckBox>
+
+            <CheckBox
+                android:id="@+id/home4check2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textSize="16sp"
+                android:paddingLeft="10dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@color/dBrown"
+                android:text="Give Ah Ma Medication (Afternoon)"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/home4check1">
+
+            </CheckBox>
+
+            <CheckBox
+                android:id="@+id/home4check3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textSize="16sp"
+                android:paddingLeft="10dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@color/dBrown"
+                android:text="Bring Ah Ma to the Polyclinic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/home4check2">
+
+            </CheckBox>
+
+            <CheckBox
+                android:id="@+id/home4check4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textSize="16sp"
+                android:paddingLeft="10dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@color/dBrown"
+                android:text="Bring Ah Ma to the Polyclinic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/home4check3">
+
+            </CheckBox>
+
+            <CheckBox
+                android:id="@+id/home4check5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textSize="16sp"
+                android:paddingLeft="10dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@color/dBrown"
+                android:text="Bring Ah Ma to the Polyclinic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/home4check4">
+            </CheckBox>
+
+            <CheckBox
+                android:id="@+id/home4check6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textSize="16sp"
+                android:paddingLeft="10dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@color/dBrown"
+                android:text="Bring Ah Ma to the Polyclinic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/home4check5">
+            </CheckBox>
+
+            <CheckBox
+                android:id="@+id/home4check7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textSize="16sp"
+                android:paddingLeft="10dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@color/dBrown"
+                android:text="Bring Ah Ma to the Polyclinic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/home4check6">
+            </CheckBox>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/home4_confirmbutton"
+        android:layout_width="231dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/button"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:text="confirm"
+        android:textSize="16dp"
+        android:fontFamily="sans-serif-black"
+        app:cornerRadius="50dp"
+        android:layout_marginVertical="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home4scroll" />
+</androidx.constraintlayout.widget.ConstraintLayout>

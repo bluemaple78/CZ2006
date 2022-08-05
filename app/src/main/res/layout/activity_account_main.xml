@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/account_main_const"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    android:background="@color/background" >
+
+    <!--                start of topbar code                 -->
+    <ImageView
+        android:id="@+id/account_main_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/topbar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:letterSpacing="0.5"
+        android:text="HOTOME"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/account_main_header"
+        app:layout_constraintTop_toTopOf="@id/account_main_header" />
+    <!--                end of topbar code                 -->
+    <ImageView
+        android:id="@+id/account_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/maleprofile"
+        app:layout_constraintTop_toBottomOf="@id/account_main_header" />
+
+    <TextView
+        android:id="@+id/account_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:fontFamily="sans-serif-black"
+        android:letterSpacing="0.05"
+        android:text="Name"
+        android:textColor="@color/dBrown"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/account_pic" />
+
+    <Button
+        android:id="@+id/view_profile_btn"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="30dp"
+        android:backgroundTint="@color/backgroundpre"
+        android:fontFamily="sans-serif-black"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:text="View Profile"
+        android:textColor="@color/dBrown"
+        android:textSize="16sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/account_name"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/grp_details_btn"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="25dp"
+        android:backgroundTint="@color/backgroundpre"
+        android:fontFamily="sans-serif-black"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:text="Group Details"
+        android:textColor="@color/dBrown"
+        android:textSize="16sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_profile_btn"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/create_grp_btn"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="25dp"
+        android:backgroundTint="@color/backgroundpre"
+        android:fontFamily="sans-serif-black"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:text="Join/Create Group"
+        android:textColor="@color/dBrown"
+        android:textSize="16sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grp_details_btn"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/logout_btn"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="@color/backgroundpre"
+        android:fontFamily="sans-serif-black"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:text="Logout"
+        android:textColor="@color/dBrown"
+        android:textSize="16sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_grp_btn" />
+
+    <!--                start of navbar code                 -->
+
+    <ImageView
+        android:id="@+id/account_toolbar_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bottombar"
+        app:layout_constraintBottom_toBottomOf="@+id/account_main_const" />
+
+    <ImageView
+        android:id="@+id/homeicon_page3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/home_notselected"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/account_toolbar_background" />
+
+    <TextView
+        android:id="@+id/home_page3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:fontFamily="@font/lato"
+        android:text="Home"
+        android:textColor="@color/dBrown"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:letterSpacing="0.07"
+        app:layout_constraintStart_toStartOf="@id/homeicon_page3"
+        app:layout_constraintEnd_toEndOf="@id/homeicon_page3"
+        app:layout_constraintTop_toBottomOf="@+id/homeicon_page3" />
+
+    <ImageView
+        android:id="@+id/calendaricon_page3"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/calendar_notselected"
+        app:layout_constraintTop_toTopOf="@id/account_toolbar_background"
+        app:layout_constraintLeft_toRightOf="@id/homeicon_page3"/>
+
+    <TextView
+        android:id="@+id/calendar_page3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="7dp"
+        android:fontFamily="@font/lato"
+        android:text="Calendar"
+        android:textColor="@color/dBrown"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:letterSpacing="0.07"
+        app:layout_constraintStart_toStartOf="@id/calendaricon_page3"
+        app:layout_constraintEnd_toEndOf="@id/calendaricon_page3"
+        app:layout_constraintTop_toBottomOf="@+id/calendaricon_page3" />
+
+    <ImageView
+        android:id="@+id/transporticon_page3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/transport_notselected"
+        app:layout_constraintTop_toTopOf="@id/account_toolbar_background"
+        app:layout_constraintLeft_toRightOf="@id/calendaricon_page3"/>
+
+    <TextView
+        android:id="@+id/transport_page3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="4dp"
+        android:fontFamily="@font/lato"
+        android:text="Transport"
+        android:textColor="@color/dBrown"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:letterSpacing="0.07"
+        app:layout_constraintStart_toStartOf="@id/transporticon_page3"
+        app:layout_constraintEnd_toEndOf="@id/transporticon_page3"
+        app:layout_constraintTop_toBottomOf="@+id/transporticon_page3" />
+
+    <ImageView
+        android:id="@+id/accounticon_page3"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="23dp"
+        android:src="@drawable/account_selected"
+        app:layout_constraintTop_toTopOf="@id/account_toolbar_background"
+        app:layout_constraintLeft_toRightOf="@id/transporticon_page3"/>
+
+    <TextView
+        android:id="@+id/account_page3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="6dp"
+        android:fontFamily="@font/lato"
+        android:text="Account"
+        android:textColor="@color/peach"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:letterSpacing="0.07"
+        app:layout_constraintStart_toStartOf="@id/accounticon_page3"
+        app:layout_constraintEnd_toEndOf="@id/accounticon_page3"
+        app:layout_constraintTop_toBottomOf="@+id/accounticon_page3" />
+    <!--               end of navbar code                 -->
+    </androidx.constraintlayout.widget.ConstraintLayout>

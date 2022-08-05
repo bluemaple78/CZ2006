@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/background">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage.HomePage2"
+    >
+
+    <ImageView
+        android:id="@+id/home2hotomelogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/topbar"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HOTOME"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-black"
+        android:letterSpacing="0.5"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="@id/home2hotomelogo"
+        app:layout_constraintBottom_toBottomOf="@id/home2hotomelogo"/>
+
+    <ImageView
+        android:id="@+id/home2_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/back_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home2hotomelogo"
+        app:tint="@color/dBrown" />
+
+    <TextView
+        android:id="@+id/home2_back_button_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Back"
+        android:textColor="@color/dBrown"
+        android:textSize="16dp"
+        app:layout_constraintStart_toEndOf="@+id/home2_back_button"
+        app:layout_constraintTop_toBottomOf="@id/home2hotomelogo"/>
+
+    <TextView
+        android:id="@+id/home2_addtask_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/home2_back_button"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Add Task"
+        android:textColor="@color/dBrown"
+        android:textSize="25dp"
+        android:fontFamily="sans-serif-black"
+        android:letterSpacing="0.05"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/home2_desc_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/home2_addtask_text"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        android:text="Task Description:"
+        android:lineSpacingExtra="3dp"
+        android:textColor="@color/dBrown"
+        android:textSize="16dp"
+        android:letterSpacing="0.05"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/home2_desc_edit"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:background="@drawable/roundededittextbeige"
+        android:paddingLeft="20dp"
+        android:textColor="@color/dBrown"
+        android:layout_marginVertical="13dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf ="@+id/home2_desc_text">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/home2_time_completion_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/home2_desc_edit"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        android:text="Time of Completion:"
+        android:lineSpacingExtra="3dp"
+        android:textColor="@color/dBrown"
+        android:textSize="16dp"
+        android:letterSpacing="0.05"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/home2_time_text"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@drawable/roundededittextbeige"
+        app:layout_constraintTop_toBottomOf="@id/home2_time_completion_text"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginVertical="13dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:lineSpacingExtra="3dp"
+        android:textColor="@color/dBrown"
+        android:textSize="16dp"
+        android:letterSpacing="0.05"
+        android:paddingLeft="20dp"
+        android:gravity="left|center_vertical">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/home2_date_completion_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/home2_time_text"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        android:text="Date of Completion:"
+        android:lineSpacingExtra="3dp"
+        android:textColor="@color/dBrown"
+        android:textSize="16dp"
+        android:letterSpacing="0.05"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/home2_date_text"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@drawable/roundededittextbeige"
+        app:layout_constraintTop_toBottomOf="@id/home2_date_completion_text"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginVertical="13dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:lineSpacingExtra="3dp"
+        android:textColor="@color/dBrown"
+        android:textSize="16dp"
+        android:letterSpacing="0.05"
+        android:paddingLeft="20dp"
+        android:gravity="left|center_vertical">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/home2_create_button"
+        android:layout_width="231dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="30dp"
+        android:backgroundTint="@color/button"
+        android:fontFamily="sans-serif-black"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:text="Create Task"
+        android:textSize="16dp"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home2_date_text" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
