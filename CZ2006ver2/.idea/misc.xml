@@ -3,6 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Builds/CZ2006/CZ2006ver2/app/src/main/res/layout/activity_account_main.xml" value="0.33513513513513515" />
+        <entry key="..\:/Builds/CZ2006/CZ2006ver2/app/src/main/res/layout/activity_change_password.xml" value="0.33513513513513515" />
+        <entry key="..\:/Builds/CZ2006/CZ2006ver2/app/src/main/res/layout/activity_connect_page.xml" value="0.24549549549549549" />
+        <entry key="..\:/Builds/CZ2006/CZ2006ver2/app/src/main/res/layout/activity_group_details.xml" value="0.24549549549549549" />
+        <entry key="..\:/Builds/CZ2006/CZ2006ver2/app/src/main/res/layout/activity_groupselection.xml" value="0.24549549549549549" />
+        <entry key="..\:/Builds/CZ2006/CZ2006ver2/app/src/main/res/layout/activity_home_page1.xml" value="0.33" />
+        <entry key="..\:/Builds/CZ2006/CZ2006ver2/app/src/main/res/layout/activity_home_page7.xml" value="0.33513513513513515" />
+        <entry key="..\:/Builds/CZ2006/CZ2006ver2/app/src/main/res/layout/activity_home_page8.xml" value="0.33513513513513515" />
+        <entry key="..\:/Builds/CZ2006/CZ2006ver2/app/src/main/res/layout/activity_home_page_completed.xml" value="0.33513513513513515" />
+        <entry key="..\:/Builds/CZ2006/CZ2006ver2/app/src/main/res/layout/activity_join_create_grp.xml" value="0.24549549549549549" />
+        <entry key="..\:/Builds/CZ2006/CZ2006ver2/app/src/main/res/layout/activity_join_create_grp2.xml" value="0.24549549549549549" />
+        <entry key="..\:/Builds/CZ2006/CZ2006ver2/app/src/main/res/layout/activity_login.xml" value="0.16358839050131926" />
+        <entry key="..\:/Builds/CZ2006/CZ2006ver2/app/src/main/res/layout/activity_register2.xml" value="0.17477477477477477" />
+        <entry key="..\:/Builds/CZ2006/CZ2006ver2/app/src/main/res/layout/activity_switch_group.xml" value="0.6298342541436464" />
+        <entry key="..\:/Builds/CZ2006/CZ2006ver2/app/src/main/res/layout/activity_transport2.xml" value="0.31891891891891894" />
+        <entry key="..\:/Builds/CZ2006/CZ2006ver2/app/src/main/res/layout/activity_view_profile.xml" value="0.33513513513513515" />
+        <entry key="..\:/Builds/CZ2006/CZ2006ver2/app/src/main/res/layout/activity_your_code_page.xml" value="0.20652173913043478" />
+        <entry key="..\:/Builds/CZ2006/CZ2006ver2/app/src/main/res/layout/home1check.xml" value="0.17477477477477477" />
+        <entry key="..\:/Builds/CZ2006/CZ2006ver2/app/src/main/res/layout/list_items.xml" value="0.24549549549549549" />
         <entry key="..\:/OneDrive/OneDrive - Nanyang Technological University/GoodNotes/CZ2006/CZ2006/CZ2006ver2/app/src/main/res/drawable/roundedcorners.xml" value="0.2095" />
         <entry key="..\:/OneDrive/OneDrive - Nanyang Technological University/GoodNotes/CZ2006/CZ2006/CZ2006ver2/app/src/main/res/layout/activity_main.xml" value="0.20208333333333334" />
         <entry key="..\:/Users/65910/Documents/GitHub/CZ2006/CZ2006/CZ2006ver2/app/src/main/res/drawable/roundedcorners.xml" value="0.1965" />
